@@ -1,0 +1,94 @@
+{
+  "rows": 17472,
+  "model_ready": 17280,
+  "split_counts": {
+    "train": 11712,
+    "validation": 2880,
+    "test": 2880
+  },
+  "zero_hours_assumed": 2765,
+  "city_hours_without_records": 0,
+  "station_days_without_records": 0,
+  "stations": [
+    {
+      "station_id": "S01",
+      "station_name": "MRT Gongguan Station (Exit 2)",
+      "september_rentals": 57843,
+      "october_rentals": 49296,
+      "november_rentals": 52456,
+      "days_with_borrowings": 91,
+      "zero_hours_assumed": 131,
+      "train_q75": 116.0
+    },
+    {
+      "station_id": "S02",
+      "station_name": "MRT Gongguan Station (Exit 3)",
+      "september_rentals": 39439,
+      "october_rentals": 32555,
+      "november_rentals": 35079,
+      "days_with_borrowings": 91,
+      "zero_hours_assumed": 151,
+      "train_q75": 82.0
+    },
+    {
+      "station_id": "S03",
+      "station_name": "NTU First Student Activity Center (Southwest)",
+      "september_rentals": 30506,
+      "october_rentals": 23751,
+      "november_rentals": 23462,
+      "days_with_borrowings": 91,
+      "zero_hours_assumed": 254,
+      "train_q75": 54.0
+    },
+    {
+      "station_id": "S04",
+      "station_name": "NTU Xiaofu Building (East)",
+      "september_rentals": 21951,
+      "october_rentals": 15915,
+      "november_rentals": 15481,
+      "days_with_borrowings": 91,
+      "zero_hours_assumed": 504,
+      "train_q75": 35.0
+    },
+    {
+      "station_id": "S05",
+      "station_name": "NTU Male Dormitory 1 (Front)",
+      "september_rentals": 18002,
+      "october_rentals": 15450,
+      "november_rentals": 15700,
+      "days_with_borrowings": 91,
+      "zero_hours_assumed": 140,
+      "train_q75": 33.0
+    },
+    {
+      "station_id": "S06",
+      "station_name": "NTU Main Library (Southwest)",
+      "september_rentals": 9513,
+      "october_rentals": 7350,
+      "november_rentals": 7227,
+      "days_with_borrowings": 91,
+      "zero_hours_assumed": 472,
+      "train_q75": 17.0
+    },
+    {
+      "station_id": "S07",
+      "station_name": "NTU Astronomy-Mathematics Building (South)",
+      "september_rentals": 6600,
+      "october_rentals": 5787,
+      "november_rentals": 5851,
+      "days_with_borrowings": 91,
+      "zero_hours_assumed": 495,
+      "train_q75": 11.0
+    },
+    {
+      "station_id": "S08",
+      "station_name": "NTU College of Management Building 1",
+      "september_rentals": 6844,
+      "october_rentals": 5036,
+      "november_rentals": 4534,
+      "days_with_borrowings": 91,
+      "zero_hours_assumed": 618,
+      "train_q75": 13.0
+    }
+  ]
+}

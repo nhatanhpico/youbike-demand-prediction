@@ -1,0 +1,18 @@
+column,type,role,description
+forecast_time,string,identifier,"Beginning of the predicted 60-minute interval, ISO 8601 with UTC+08:00. Use for sorting and alignment."
+station_id,string,feature,Teaching station ID S01-S08. One-hot encode. Not an official station code.
+station_name,string,display,English teaching translation. Do not use alongside station_id as a second feature.
+hour,integer,feature,"Forecast hour, 0-23."
+day_of_week,integer,feature,Monday=0 through Sunday=6.
+is_weekend,integer,feature,"1 for Saturday or Sunday, otherwise 0. Not a holiday flag."
+rentals_previous_hour,integer,feature,"Rentals starting in [forecast_time-1h, forecast_time). Blank when unavailable."
+rentals_same_hour_previous_day,integer,feature,"Rentals starting in [forecast_time-24h, forecast_time-23h). Blank when unavailable."
+rentals_mean_previous_24h,float,feature,Mean rental count across 24 complete hourly bins immediately preceding forecast_time. Blank if any bin is unavailable.
+target_rentals_next_hour,integer,regression_target,"Observed rentals starting in [forecast_time, forecast_time+1h). Both bike types combined."
+high_demand_threshold,float,label_definition,Station-specific training-period 75th percentile. Not an input feature. Includes assumed zero bins and first 24 training hours.
+target_high_demand,integer,classification_target,"1 if target_rentals_next_hour is strictly greater than high_demand_threshold, otherwise 0."
+split,string,evaluation,"train, validation, or test. Never a feature."
+target_zero_assumed,integer,audit_only,"1 if station-hour has no recorded rentals and city-hour has some records, so target zero is assumed. Retrospective: never a feature."
+station_day_has_records,integer,audit_only,1 if station has at least one borrowing anywhere in that day. Retrospective: never a feature or proof of completeness.
+city_hour_has_records,integer,audit_only,1 if archive has at least one citywide borrowing in forecast hour. Retrospective: never a feature or proof of completeness.
+model_ready,integer,row_filter,1 if target and all three lag features are available. Filter to 1 for modeling. Never a feature.

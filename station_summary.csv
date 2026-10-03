@@ -1,0 +1,9 @@
+station_id,station_name,september_rentals,october_rentals,november_rentals,days_with_borrowings,zero_hours_assumed,train_q75
+S01,MRT Gongguan Station (Exit 2),57843,49296,52456,91,131,116.0
+S02,MRT Gongguan Station (Exit 3),39439,32555,35079,91,151,82.0
+S03,NTU First Student Activity Center (Southwest),30506,23751,23462,91,254,54.0
+S04,NTU Xiaofu Building (East),21951,15915,15481,91,504,35.0
+S05,NTU Male Dormitory 1 (Front),18002,15450,15700,91,140,33.0
+S06,NTU Main Library (Southwest),9513,7350,7227,91,472,17.0
+S07,NTU Astronomy-Mathematics Building (South),6600,5787,5851,91,495,11.0
+S08,NTU College of Management Building 1,6844,5036,4534,91,618,13.0
