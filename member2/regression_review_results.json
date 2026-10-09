@@ -1,0 +1,127 @@
+{
+  "lr_table": [
+    {
+      "learning_rate": 0.001,
+      "diverged": false,
+      "train_mse": 382.6273592059804,
+      "validation_mse": 328.5898460607566
+    },
+    {
+      "learning_rate": 0.01,
+      "diverged": false,
+      "train_mse": 369.6332721698434,
+      "validation_mse": 328.87611598250294
+    },
+    {
+      "learning_rate": 0.1,
+      "diverged": false,
+      "train_mse": 369.55845673889684,
+      "validation_mse": 328.6334711672368
+    }
+  ],
+  "reg_table": [
+    {
+      "model": "Linear regression",
+      "split": "train",
+      "mse": 382.6273592059804,
+      "mae": 11.326626883938228
+    },
+    {
+      "model": "Linear regression",
+      "split": "validation",
+      "mse": 328.5898460607566,
+      "mae": 10.530925000939126
+    },
+    {
+      "model": "Ridge",
+      "split": "train",
+      "mse": 369.5584679985262,
+      "mae": 10.921901523570028
+    },
+    {
+      "model": "Ridge",
+      "split": "validation",
+      "mse": 328.6258332913962,
+      "mae": 10.469737909164824
+    }
+  ],
+  "selected_learning_rate": 0.001,
+  "selected_regression_model": "Linear regression",
+  "q2_numbers_found": [
+    "0.001",
+    "0.01",
+    "0.0360",
+    "0.04",
+    "0.1",
+    "0.368",
+    "0.7719",
+    "0.7917",
+    "1,500",
+    "1.0",
+    "328.5898",
+    "328.6258",
+    "328.6335",
+    "328.8761",
+    "369.5585",
+    "382.6274",
+    "493"
+  ],
+  "checks": {
+    "train dates inside 2025-09-01 .. 2025-10-31": true,
+    "train rows all model_ready": true,
+    "train row count = CSV (11520)": true,
+    "validation dates inside 2025-11-01 .. 2025-11-15": true,
+    "validation rows all model_ready": true,
+    "validation row count = CSV (2880)": true,
+    "test dates inside 2025-11-16 .. 2025-11-30": true,
+    "test rows all model_ready": true,
+    "test row count = CSV (2880)": true,
+    "splits do not overlap in time": true,
+    "one-hot: S01 rows are all zero": true,
+    "one-hot: other rows have exactly one 1": true,
+    "first 6 columns are the allowed numeric features": true,
+    "fit_standardizer / apply_standardizer (mean, population std)": true,
+    "zero std is replaced by 1": true,
+    "linear_predict = X w + b": true,
+    "mse_loss = sklearn mean_squared_error": true,
+    "linear_gradients = finite differences": true,
+    "gradient shapes: grad_w (D,), grad_b scalar": true,
+    "gradient_step = w - lr * grad, inputs unchanged": true,
+    "all splits use training mean / std only": true,
+    "lr=0.001: train / validation MSE match the notebook table": true,
+    "lr=0.001: weights match the notebook model": true,
+    "lr=0.01: train / validation MSE match the notebook table": true,
+    "lr=0.1: train / validation MSE match the notebook table": true,
+    "sklearn Ridge = closed-form ridge": true,
+    "Ridge uses alpha = 1.0": true,
+    "Linear regression train: MSE and MAE in reg_table": true,
+    "Linear regression validation: MSE and MAE in reg_table": true,
+    "Ridge train: MSE and MAE in reg_table": true,
+    "Ridge validation: MSE and MAE in reg_table": true,
+    "best learning rate by validation MSE = 0.001": true,
+    "regression model by validation MSE = Linear regression": true,
+    "gap_table Linear regression train": true,
+    "gap_table Linear regression validation": true,
+    "gap_table Ridge train": true,
+    "gap_table Ridge validation": true,
+    "least squares solution matches notebook (theta_ls)": true,
+    "lr = 0.1 reaches the least squares solution": true,
+    "all learning rates below the stable limit 0.3685": true,
+    "Member 2 cell did not change any model or selection": true,
+    "Q2 says 369.5585 (computed 369.558457)": true,
+    "Q2 says 382.6274 (computed 382.627359)": true,
+    "Q2 says 0.368 (computed 0.368487)": true,
+    "Q2 says 328.5898 (computed 328.589846)": true,
+    "Q2 says 328.8761 (computed 328.876116)": true,
+    "Q2 says 328.6335 (computed 328.633471)": true,
+    "Q2 says 0.04 (computed 0.043625)": true,
+    "Q2 says 328.6258 (computed 328.625833)": true,
+    "Q2 says 0.0360 (computed 0.035987)": true,
+    "Q2 says 0.7917 (computed 0.791711)": true,
+    "Q2 says 0.7719 (computed 0.771929)": true,
+    "Q2 says 493 (computed 493.000000)": true,
+    "Q2: Ridge training MSE also rounds to 369.5585": true,
+    "Q2: validation MSE < training MSE for both models": true,
+    "Q2: lr = 0.001 has not converged (train MSE above least squares)": true
+  }
+}
