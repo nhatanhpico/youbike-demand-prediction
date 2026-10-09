@@ -1,6 +1,6 @@
 # YouBike Rental Forecasting around NTU and Gongguan
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nhatanhpico/youbike-demand-prediction/blob/main/Group_01_YouBike_output.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nhatanhpico/youbike-demand-prediction/blob/main/Group_13_YouBike_output.ipynb)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-2.x-013243.svg?logo=numpy&logoColor=white)](https://numpy.org/)
 [![pandas](https://img.shields.io/badge/pandas-2.x-150458.svg?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
@@ -13,7 +13,7 @@ An end-to-end machine learning project predicting hourly YouBike rental demand a
 ## 🚀 Quick Start in Google Colab
 
 Click the badge above or use this link to open the fully executed notebook directly in Google Colab:
-- **[Open `Group_01_YouBike_output.ipynb` in Colab](https://colab.research.google.com/github/nhatanhpico/youbike-demand-prediction/blob/main/Group_01_YouBike_output.ipynb)**
+- **[Open `Group_13_YouBike.ipynb` in Colab](https://colab.research.google.com/github/nhatanhpico/youbike-demand-prediction/blob/main/Group_13_YouBike_output.ipynb)**
 
 ---
 
@@ -104,8 +104,8 @@ jupyter lab
 ├── README.md                      # Project documentation and Colab badge
 ├── README_EN.md                   # Course assignment specification
 ├── Assignment_Guide_EN.md         # Detailed assignment grading guide
-├── Group_01_YouBike_output.ipynb  # Executed notebook with outputs and answers
-├── Group_01_YouBike.ipynb         # Clean completed submission notebook
+├── Group_13_YouBike.ipynb  # Executed notebook with outputs and answers
+├── Group_13_YouBike.ipynb         # Clean completed submission notebook
 ├── YouBike_Starter_EN.ipynb       # Course starter notebook
 ├── youbike_hourly_english.csv     # Hourly YouBike rental dataset
 ├── requirements.txt               # Pinned package versions
